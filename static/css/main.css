@@ -293,7 +293,7 @@ section {
     font-family: var(--font-default);
     font-size: 15px;
     font-weight: 500;
-    color: rgba(249, 4, 4, 0.6);
+    color: rgba(255, 255, 255, 0.6);
     white-space: nowrap;
     transition: 0.3s;
   }
@@ -309,7 +309,7 @@ section {
   .navbar .active,
   .navbar .active:focus,
   .navbar li:hover > a {
-    color: #059652;
+    color: #ffffff;
   }
 
   .navbar .dropdown ul {
@@ -801,7 +801,7 @@ section {
 }
 
 .call-to-action .cta-btn:hover {
-  background: #ff0000;
+  background: #e5e0e0;
 }
 
 /*--------------------------------------------------------------
