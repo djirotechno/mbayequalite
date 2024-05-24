@@ -114,19 +114,15 @@ USE_TZ = True
 
 
 
-#STATIC_URL = '/static/'
-# Add this below line in settings.py
-#STATICFILES_DIRS = [
- #   BASE_DIR / "static",
-#]
+# STATIC_URL = '/static/'
+# # Add this below line in settings.py
+# STATICFILES_DIRS = [
+#     BASE_DIR / "static",
+# ]
 
-STATIC_URL = 'static/'
+STATIC_ROOT = BASE_DIR / "static"
+STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
 
-STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, "static")
-]
-
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')Run the command: py manage.py collectstatic to collect static files.
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
 
