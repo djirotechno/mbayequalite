@@ -26,7 +26,7 @@ SECRET_KEY = "django-insecure-_1ifi#gc%n&$087*1vlty-r9jlr8k&3tt(qcw_($g&f1_db9f0
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['127.0.0.1','localhost',"mbayequalite.onrender.com"]
 
 
 # Application definition
