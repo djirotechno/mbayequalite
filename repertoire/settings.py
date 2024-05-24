@@ -114,13 +114,12 @@ USE_TZ = True
 
 
 
-# STATIC_URL = '/static/'
-# # Add this below line in settings.py
+# Add this below line in settings.py
 # STATICFILES_DIRS = [
-#     BASE_DIR / "static",
+#     BASE_DIR / 'static',
 # ]
-
-STATIC_ROOT = BASE_DIR / "staticfiles"
+STATIC_URL = 'static/'
+STATIC_ROOT = BASE_DIR / "static"
 STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
 
 # Default primary key field type
