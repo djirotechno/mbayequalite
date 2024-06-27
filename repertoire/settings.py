@@ -38,7 +38,8 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
-    "contact"
+    "contact",
+    "sendmail"
 ]
 
 MIDDLEWARE = [
@@ -114,13 +115,13 @@ USE_TZ = True
 
 
 
-# Add this below line in settings.py
-# STATICFILES_DIRS = [
-#     BASE_DIR / 'static',
-# ]
+#Add this below line in settings.py
+STATICFILES_DIRS = [
+    BASE_DIR / 'static',
+ ]
 STATIC_URL = 'static/'
-STATIC_ROOT = BASE_DIR / "static"
-STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
+# STATIC_ROOT = BASE_DIR / "static"
+# STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
